@@ -126,3 +126,15 @@
 // }
 // console.log(array);
 
+
+//zbir pozitivnih brojeva
+
+// var array = [3, 11, -5, -3, 2];
+// var zbir = 0;
+
+// for(var i=0;i<array.length;i++){
+    // if(array[i] > 0){
+        // zbir += array[i];
+    // }
+// }
+// console.log(zbir);
