@@ -107,10 +107,10 @@ for (var i = 1; i < 100; i++) {
 var e = 3;
 var a = [5, -4, 3, 33, 7];
 
-for(var i=0;i<a.length;i++){
-    if(a[i]==e){
+for (var i = 0; i < a.length; i++) {
+    if (a[i] == e) {
         console.log("Yes");
-    }else if(a[i]!==e){
+    } else if (a[i] !== e) {
         console.log("No");
     }
 };
