@@ -71,21 +71,21 @@ var studenti = [["David", 80], ["Marko", 77], ["Dany", 88,], ["John", 95], ["Tho
 var prosek = 0;
 // 
 for (var i = 0; i < studenti.length; i++) {
-prosek = prosek + studenti[i][1];
-var prosek1 = (prosek/studenti.length)
+    prosek = prosek + studenti[i][1];
+    var prosek1 = (prosek / studenti.length)
 }
-console.log("Prosek ocena je: "+(prosek)/studenti.length);
+console.log("Prosek ocena je: " + (prosek) / studenti.length);
 // 
-if(prosek1<60){
-console.log("Ocena : F");
-}else if(prosek1<70){
-console.log("Ocena : D");
-}else if(prosek1<80){
-console.log("Ocena : C");
-}else if(prosek1<90){
-console.log("Ocena : B");
-}else if(prosek1<100){
-console.log("Ocena : A");
+if (prosek1 < 60) {
+    console.log("Ocena : F");
+} else if (prosek1 < 70) {
+    console.log("Ocena : D");
+} else if (prosek1 < 80) {
+    console.log("Ocena : C");
+} else if (prosek1 < 90) {
+    console.log("Ocena : B");
+} else if (prosek1 < 100) {
+    console.log("Ocena : A");
 }
 
 
@@ -96,7 +96,21 @@ for (var i = 1; i < 100; i++) {
         console.log(i + " FizzBuzz");
     } else if (i % 5 == 0) {
         console.log(i + " Buzz");
-    } else if (i % 3 == 0){
-        console.log(i+" Fizz");
+    } else if (i % 3 == 0) {
+        console.log(i + " Fizz");
     }
 }
+
+
+// da li se element nalazi u nizu
+
+var e = 3;
+var a = [5, -4, 3, 33, 7];
+
+for(var i=0;i<a.length;i++){
+    if(a[i]==e){
+        console.log("Yes");
+    }else if(a[i]!==e){
+        console.log("No");
+    }
+};
