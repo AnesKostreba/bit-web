@@ -51,3 +51,13 @@ for (var i = 0; i < niz.length; i++) {
 };
 console.log(zbir);
 console.log(proizvod);
+
+
+//stampanje elemenata niza kao string
+var x = ['1','A','B','c','r', true, NaN, undefined];
+
+var a="";
+for(var i=0;i<x.length;i++){
+    a+=x[i];
+};
+console.log(a);
