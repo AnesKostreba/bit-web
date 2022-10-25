@@ -19,110 +19,110 @@
 
 //broj paran/neparan
 
-for (var i = 0; i < 15; i++) {
-    if (i % 2 == 0) {
-        console.log("Broj je paran " + i);
-    } else if (i % 2 != 0) {
-        console.log("Broj nije paran " + i);
-    }
-};
+// for (var i = 0; i < 15; i++) {
+// if (i % 2 == 0) {
+// console.log("Broj je paran " + i);
+// } else if (i % 2 != 0) {
+// console.log("Broj nije paran " + i);
+// }
+// };
 
 
 //sabiranje do 1000
 
-var suma = 0;
-for (var i = 0; i < 1000; i++) {
-    if (i % 3 === 0 || i % 5 === 0) {
-        suma = suma + i;
-    }
-}
-console.log(suma);
+// var suma = 0;
+// for (var i = 0; i < 1000; i++) {
+// if (i % 3 === 0 || i % 5 === 0) {
+// suma = suma + i;
+// }
+// }
+// console.log(suma);
 
 
 //zbir i proizvod niza
 
-var niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var zbir = 0;
-var proizvod = 1;
+// var niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var zbir = 0;
+// var proizvod = 1;
 
-for (var i = 0; i < niz.length; i++) {
-    zbir += niz[i];
-    proizvod *= niz[i];
-};
-console.log(zbir);
-console.log(proizvod);
+// for (var i = 0; i < niz.length; i++) {
+// zbir += niz[i];
+// proizvod *= niz[i];
+// };
+// console.log(zbir);
+// console.log(proizvod);
 
 
 //stampanje elemenata niza kao string
-var x = ['1', 'A', 'B', 'c', 'r', true, NaN, undefined];
+// var x = ['1', 'A', 'B', 'c', 'r', true, NaN, undefined];
 
-var a = "";
-for (var i = 0; i < x.length; i++) {
-    a += x[i];
-    a += " "
-};
-console.log(a);
+// var a = "";
+// for (var i = 0; i < x.length; i++) {
+// a += x[i];
+// a += " "
+// };
+// console.log(a);
 
 
 
 //prosek ocena
 
-var studenti = [["David", 80], ["Marko", 77], ["Dany", 88,], ["John", 95], ["Thomas", 68]];
-var prosek = 0;
-// 
-for (var i = 0; i < studenti.length; i++) {
-    prosek = prosek + studenti[i][1];
-    var prosek1 = (prosek / studenti.length)
-}
-console.log("Prosek ocena je: " + (prosek) / studenti.length);
-// 
-if (prosek1 < 60) {
-    console.log("Ocena : F");
-} else if (prosek1 < 70) {
-    console.log("Ocena : D");
-} else if (prosek1 < 80) {
-    console.log("Ocena : C");
-} else if (prosek1 < 90) {
-    console.log("Ocena : B");
-} else if (prosek1 < 100) {
-    console.log("Ocena : A");
-}
+// var studenti = [["David", 80], ["Marko", 77], ["Dany", 88,], ["John", 95], ["Thomas", 68]];
+// var prosek = 0;
+// for (var i = 0; i < studenti.length; i++) {
+// prosek = prosek + studenti[i][1];
+// var prosek1 = (prosek / studenti.length)
+// }
+// console.log("Prosek ocena je: " + (prosek) / studenti.length);
+
+// if (prosek1 < 60) {
+// console.log("Ocena : F");
+// } else if (prosek1 < 70) {
+// console.log("Ocena : D");
+// } else if (prosek1 < 80) {
+// console.log("Ocena : C");
+// } else if (prosek1 < 90) {
+// console.log("Ocena : B");
+// } else if (prosek1 < 100) {
+// console.log("Ocena : A");
+// }
 
 
 // FizBuzz
-var brojevi;
-for (var i = 1; i < 100; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
-        console.log(i + " FizzBuzz");
-    } else if (i % 5 == 0) {
-        console.log(i + " Buzz");
-    } else if (i % 3 == 0) {
-        console.log(i + " Fizz");
-    }
-}
+// var brojevi;
+// for (var i = 1; i < 100; i++) {
+// if (i % 3 == 0 && i % 5 == 0) {
+// console.log(i + " FizzBuzz");
+// } else if (i % 5 == 0) {
+// console.log(i + " Buzz");
+// } else if (i % 3 == 0) {
+// console.log(i + " Fizz");
+// }
+// }
 
 
 // da li se element nalazi u nizu
 
-var e = 3;
-var a = [5, -4, 3, 33, 7];
+// var e = 3;
+// var a = [5, -4, 3, 33, 7];
 
-for (var i = 0; i < a.length; i++) {
-    if (a[i] == e) {
-        console.log("Yes");
-    } else if (a[i] !== e) {
-        console.log("No");
-    }
-};
+// for (var i = 0; i < a.length; i++) {
+// if (a[i] == e) {
+// console.log("Yes");
+// } else if (a[i] !== e) {
+// console.log("No");
+// }
+// };
 
 
 // mnozenje pozitivnog elementa
 
-var array = [-3, 11, 5, 3.4, -8];
+// var array = [-3, 11, 5, 3.4, -8];
 
-for (var i = 0; i < array.length; i++) {
-    if (array[i] >= 2) {
-        array[i] *= 2
-    }
-}
-console.log(array);
+// for (var i = 0; i < array.length; i++) {
+// if (array[i] >= 2) {
+// array[i] *= 2
+// }
+// }
+// console.log(array);
+
