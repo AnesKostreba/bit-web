@@ -133,8 +133,20 @@
 // var zbir = 0;
 
 // for(var i=0;i<array.length;i++){
-    // if(array[i] > 0){
-        // zbir += array[i];
-    // }
+// if(array[i] > 0){
+// zbir += array[i];
+// }
 // }
 // console.log(zbir);
+
+
+
+
+// popunjavanje treceg niza 
+// var array1 = [4, 5, 6, 2];
+// var array2 = [3, 8, 11, 9];
+// var array3 = [];
+// for (var i = 0; i < array1.length; i++) {
+    // array3.push(array1[i],array2[i]);
+// }
+// console.log(array3);
