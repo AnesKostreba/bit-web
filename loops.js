@@ -114,3 +114,15 @@ for (var i = 0; i < a.length; i++) {
         console.log("No");
     }
 };
+
+
+// mnozenje pozitivnog elementa
+
+var array = [-3, 11, 5, 3.4, -8];
+
+for (var i = 0; i < array.length; i++) {
+    if (array[i] >= 2) {
+        array[i] *= 2
+    }
+}
+console.log(array);
