@@ -1,0 +1,19 @@
+.unordered li{
+    list-style-type: circle;
+}
+.unordered2 li{
+    list-style-type: square;
+}
+.ordered{
+    list-style-type: upper-alpha;
+}
+.ordered2{
+    list-style-type: upper-roman;
+}
+.unordered3 {
+    width: 200px;
+    
+}
+.unordered4{
+    width: 200px;
+}

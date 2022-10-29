@@ -1,0 +1,32 @@
+table{
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+/* table .header{ */
+    /* text-align: center; */
+    /* border-spacing: 0px; */
+    /* background-color: red; */
+/* } */
+th{
+    text-align: center;
+    border-spacing: 0px;
+    background-color: red;
+}
+table img{
+    height: 100px;
+}
+table td{
+    border-spacing: 10px;
+    width: 100px;
+    max-height: 50px;
+}
+table tr td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table tr:nth-child(2n+3) {
+    background-color:rgb(212, 207, 207) ;
+}
+table tr:hover{
+    background-color: yellow;
+}
