@@ -124,4 +124,13 @@
 //Write a program that calculates the number of appearances of a letter a in a given string.
 // Modify the program so it calculates the number of both letters a and A.
 
+var niz = ["a","a","A","c","h"];
+var a= "a";
+var brojPonavljanja = 0;
 
+for(var i=0; i<niz.length; i++){
+    if(niz[i]==a){
+        brojPonavljanja++;
+    }
+};
+console.log(brojPonavljanja);
