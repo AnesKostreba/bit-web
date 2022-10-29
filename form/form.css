@@ -40,6 +40,7 @@ form input {
 }
 form input:hover{
     cursor: pointer;
+
 }
 form label {
     font-weight: 700;
@@ -63,7 +64,7 @@ button {
 
 button:hover {
     background-color: rgb(241, 113, 113);
-    
+    cursor: url(resized/imgbin-computer-mouse-pointer-cursor-computer-mouse-y8pDJBQ5AS63G7mGTpE27cWS8_30x20.jpg) , auto;
 }
 
 input::placeholder{
