@@ -104,13 +104,12 @@
 // da li se element nalazi u nizu
 
 // var e = 3;
-// var a = [5, -4, 3, 33, 7];
-
+// var a = [5, -4, 31, 3, 7];
+// // 
 // for (var i = 0; i < a.length; i++) {
 // if (a[i] == e) {
-// console.log("Yes");
-// } else if (a[i] !== e) {
-// console.log("No");
+// console.log("Yes "+i);
+// break;
 // }
 // };
 
@@ -118,9 +117,9 @@
 // mnozenje pozitivnog elementa
 
 // var array = [-3, 11, 5, 3.4, -8];
-
+// // 
 // for (var i = 0; i < array.length; i++) {
-// if (array[i] >= 2) {
+// if (array[i] > 0) {
 // array[i] *= 2
 // }
 // }
@@ -129,7 +128,7 @@
 
 //zbir pozitivnih brojeva
 
-// var array = [3, 11, -5, -3, 2];
+// var array = [3, 11, -5, -3, 2, 2];
 // var zbir = 0;
 
 // for(var i=0;i<array.length;i++){
@@ -142,11 +141,46 @@
 
 
 
-// popunjavanje treceg niza 
+//popunjavanje treceg niza 
 // var array1 = [4, 5, 6, 2];
 // var array2 = [3, 8, 11, 9];
 // var array3 = [];
 // for (var i = 0; i < array1.length; i++) {
-    // array3.push(array1[i],array2[i]);
+    // array3.push(array1);
+    // array3.push(array2);
 // }
 // console.log(array3);
+// // 
+
+// var a = [
+
+    // [1, 2, 1, 24],
+    // [8, 11, 9, 4],
+    // [7, 0, 7, 27]
+// ];
+
+// for (var i = 0; i < a.length; i++) {
+    // console.log(a[i])
+    // for (var j = 0; j < a[i].length; j++) {
+        // console.log(a[i][j]);
+    // };
+// }
+
+// var input = [4,2,3,4,-1,-19,6,-22];
+// var minimum = input[0];
+// var secoundMinimum = input[0];
+// for(var i=0;i<input.length;i++){
+    // if(input[i] < minimum){
+        // minimum = input[i];
+    // }
+// }
+
+
+// for(var i=0;i<input.length;i++){
+    // if(input[i] < secoundMinimum && input[i] > minimum){
+        // secoundMinimum = input[i];
+    // }
+// }
+// console.log(minimum,secoundMinimum);
+
+
