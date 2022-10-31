@@ -84,14 +84,14 @@
 
 
 // function broj(niz,e) {
-    // var brojPonavljanja = 0;
-    // for (var i = 0; i < niz.length; i++) {
-        // if (niz[i] == e) {
-            // brojPonavljanja++;
-        // }
+// var brojPonavljanja = 0;
+// for (var i = 0; i < niz.length; i++) {
+// if (niz[i] == e) {
+// brojPonavljanja++;
+// }
 // // 
-    // }
-    // return brojPonavljanja;
+// }
+// return brojPonavljanja;
 // }
 // // 
 // var result = broj([1,2,3,4,5,8,7,7,7],7);
@@ -105,14 +105,14 @@
 
 
 // function calc(niz) {
-    // var zbir = 0;
-    // for (var i = 0; i < niz.length; i++) {
-        // if (niz[i] % 2 == 1) {
-            // zbir += niz[i];
-        // }
-    // }
+// var zbir = 0;
+// for (var i = 0; i < niz.length; i++) {
+// if (niz[i] % 2 == 1) {
+// zbir += niz[i];
+// }
+// }
 
-    // return zbir;
+// return zbir;
 // }
 
 // var result = calc([1,3,4,5,6]);
@@ -124,13 +124,25 @@
 //Write a program that calculates the number of appearances of a letter a in a given string.
 // Modify the program so it calculates the number of both letters a and A.
 
-var niz = ["a","a","A","c","h"];
-var a= "a";
+var niz = ["a", "a", "A", "c", "h"];
+var a = "a";
 var brojPonavljanja = 0;
 
-for(var i=0; i<niz.length; i++){
-    if(niz[i]==a){
+for (var i = 0; i < niz.length; i++) {
+    if (niz[i] == a) {
         brojPonavljanja++;
     }
 };
 console.log(brojPonavljanja);
+
+// Write a program that concatenates a given string given number of times. For
+// example, if “abc” and 4 are given values, the program prints out abcabcabcabc.
+
+function spajanjeString(input, n) {
+    var result= '';
+    for (var i = 0; i < n; i++) {
+        result += input;
+    }
+    return result;
+}
+console.log(spajanjeString('t',4));
