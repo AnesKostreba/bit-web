@@ -139,10 +139,58 @@ console.log(brojPonavljanja);
 // example, if “abc” and 4 are given values, the program prints out abcabcabcabc.
 
 function spajanjeString(input, n) {
-    var result= '';
+    var result = '';
     for (var i = 0; i < n; i++) {
         result += input;
     }
     return result;
 }
-console.log(spajanjeString('t',4));
+console.log(spajanjeString('t', 4));
+
+
+// Write a program that draws a square of a given size. For example, if the size of
+// square is 5 the program should draw:
+
+// function square(a) {
+// var result = '';
+// for (var i = 0; i < a; i++) {
+// for (var j = 0; j < a; j++) {
+// if (i == 0 || i == (a - 1)) {
+// result += '*'
+// } else {
+// if (j == 0 || j == (a - 1)) {
+// result += '*'
+// } else {
+// result += ' '
+// }
+// }
+
+// }
+
+// result += '\n';
+// }
+
+// console.log(result);
+// }
+
+// square(5);
+
+function square(a) {
+    result = '';
+    for (var i = 0; i < a; i++) {
+        for (var j = 0; j < a; j++) {
+            if (i == 0 || i == (a - 1)) {
+                result += "*"
+            } else {
+                if (j == 0 || j == (a - 1)) {
+                    result += "*"
+            } else {
+                result += " "
+            }
+        }
+    }
+     result += "\n";
+}
+       console.log(result);
+    }
+square(8);
