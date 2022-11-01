@@ -195,7 +195,7 @@ console.log(isStringBlank(''))
 
 //Write a function that concatenates a given string n times (default is 1).
 
-function concat(input,n){
+function concatenates(input,n){
     var result = '';
     if(n==undefined){
         n = 1;
@@ -205,4 +205,18 @@ function concat(input,n){
     }
     return result;
 }
-console.log(concat("eee",3));
+console.log(concatenates("eee",3));
+
+//Write a function to count the number of letter occurrences in a string.
+
+function concatNumber(niz,n){
+    var number = 0;
+    for(var i=0;i<niz.length;i++){
+        var element = niz[i];
+        if(element==n){
+            number++;
+        }
+    }
+    return number;
+}
+console.log(concatNumber("My random string",'m'));
