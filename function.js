@@ -59,20 +59,20 @@
 //Write a program that calculates a number of digits of a given number.
 
 
-// function calculates(numToSeparate) {
+function calculates(numToSeparate) {
 
-// var arrayOfDigits = Array.from(String(numToSeparate), Number);
-// var num = 0;
-// for (var i = 0; i < arrayOfDigits.length; i++) {
-// num++;
+    var arrayOfDigits = Array.from(String(numToSeparate), Number);
+    var num = 0;
+    for (var i = 0; i < arrayOfDigits.length; i++) {
+        num++;
 
-// }
+    }
 
-// return num;
-// }
+    return num;
+}
 
-// var broj = calculates(12);
-// console.log(broj);
+var broj = calculates(12);
+console.log(broj);
 
 
 
@@ -83,7 +83,7 @@
 // Result: 3
 
 
-// function broj(niz,e) {
+// function broj(niz, e) {
 // var brojPonavljanja = 0;
 // for (var i = 0; i < niz.length; i++) {
 // if (niz[i] == e) {
@@ -94,9 +94,9 @@
 // return brojPonavljanja;
 // }
 // // 
-// var result = broj([1,2,3,4,5,8,7,7,7],7);
+// var result = broj([1, 2, 3, 4, 5, 8, 7, 7, 7], 7);
 // console.log(result);
-
+// // 
 
 
 
@@ -104,19 +104,19 @@
 //Write a program that calculates the sum of odd elements of a given array.
 
 
-// function calc(niz) {
-// var zbir = 0;
-// for (var i = 0; i < niz.length; i++) {
-// if (niz[i] % 2 == 1) {
-// zbir += niz[i];
-// }
-// }
+function calc(niz) {
+    var zbir = 0;
+    for (var i = 0; i < niz.length; i++) {
+        if (niz[i] % 2 == 1) {
+            zbir += niz[i];
+        }
+    }
 
-// return zbir;
-// }
+    return zbir;
+}
 
-// var result = calc([1,3,4,5,6]);
-// console.log(result);
+var result = calc([1, 3, 4, 5, 6]);
+console.log(result);
 
 
 
@@ -195,28 +195,49 @@ console.log(isStringBlank(''))
 
 //Write a function that concatenates a given string n times (default is 1).
 
-function concatenates(input,n){
+function concatenates(input, n) {
     var result = '';
-    if(n==undefined){
+    if (n == undefined) {
         n = 1;
     }
-    for(var i=0; i<n;i++){
+    for (var i = 0; i < n; i++) {
         result += input;
     }
     return result;
 }
-console.log(concatenates("eee",3));
+console.log(concatenates("eee", 3));
 
 //Write a function to count the number of letter occurrences in a string.
 
-function concatNumber(niz,n){
+function concatNumber(niz, n) {
     var number = 0;
-    for(var i=0;i<niz.length;i++){
+    for (var i = 0; i < niz.length; i++) {
         var element = niz[i];
-        if(element==n){
+        if (element == n) {
             number++;
         }
     }
     return number;
 }
-console.log(concatNumber("My random string",'m'));
+console.log(concatNumber("My randomm string", 'm'));
+
+
+// Write a function to find the position of the last occurrence of a character in a string. The
+// result should be in human numeration form. If there are no occurrences of the character,
+// function should return -1.
+function position(inputString, character) {
+
+    for (var i = 0; i < inputString.length; i++) {
+        var currentCharacter = inputString[i];
+        if (currentCharacter === character) {
+            return i + 1;
+        }
+    }
+    return -1;
+}
+
+var characterPosition = position('This is my string', 'm');
+console.log(characterPosition);
+
+//  Write a function to convert string into an array. Space in a string should be represented as
+// “null” in new array.
