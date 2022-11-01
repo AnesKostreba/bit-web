@@ -151,30 +151,6 @@ console.log(spajanjeString('t', 4));
 // Write a program that draws a square of a given size. For example, if the size of
 // square is 5 the program should draw:
 
-// function square(a) {
-// var result = '';
-// for (var i = 0; i < a; i++) {
-// for (var j = 0; j < a; j++) {
-// if (i == 0 || i == (a - 1)) {
-// result += '*'
-// } else {
-// if (j == 0 || j == (a - 1)) {
-// result += '*'
-// } else {
-// result += ' '
-// }
-// }
-
-// }
-
-// result += '\n';
-// }
-
-// console.log(result);
-// }
-
-// square(5);
-
 function square(a) {
     result = '';
     for (var i = 0; i < a; i++) {
@@ -184,15 +160,49 @@ function square(a) {
             } else {
                 if (j == 0 || j == (a - 1)) {
                     result += "*"
-            } else {
-                result += " "
+                } else {
+                    result += " "
+                }
             }
         }
+        result += "\n";
     }
-     result += "\n";
+    console.log(result);
 }
-       console.log(result);
-    }
 square(8);
 
 //Write a function to check whether the `input` is a string or not.
+
+function isString(input) {
+    if (typeof input == "string") {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isString("aaa"));
+
+//Write a function to check whether a string is blank or not.
+function isStringBlank(input) {
+    if (typeof input === 'string' && input.length === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isStringBlank(''))
+
+//Write a function that concatenates a given string n times (default is 1).
+
+function concat(input,n){
+    var result = '';
+    if(n==undefined){
+        n = 1;
+    }
+    for(var i=0; i<n;i++){
+        result += input;
+    }
+    return result;
+}
+console.log(concat("eee",3));
