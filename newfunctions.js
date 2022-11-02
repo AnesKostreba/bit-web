@@ -77,7 +77,7 @@ function calculates(niz) {
 console.log(calculates([3, 11, -5, -3, 2, 2]));
 
 
-// Write a program that checks if a given array is symmetric. An array is symmetric if it can
+// 6. Write a program that checks if a given array is symmetric. An array is symmetric if it can
 // be read the same way both from the left and the right hand side.
 // Input array: [2, 4, -2, 7, -2, 4, 2]
 
@@ -108,4 +108,31 @@ console.log(symmetric([2, 4, -2, 7, -2, 4]));
 // length.
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 3, 5, 8, 6, 11, 2, 9]
+
+function intertwines(niz1,niz2){
+    var res = [];
+    for(var i=0;i<niz1.length;i++){
+        res.push(niz1[i]);
+        res.push(niz2[i]);
+    }
+    return res;
+}
+console.log(intertwines([4, 5, 6, 2], [3, 8, 11, 9]));
+
+// 8. Write a program that concatenates two arrays.
+// Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
+// Output array: [4, 5, 6, 2, 3, 8, 11, 9]
+
+function concatenates(niz1,niz2){
+    var niz3 = [];
+    for(var i=0; i<niz1.length;i++){
+        niz3 = niz1.concat(niz2); 
+    }
+    return niz3;
+}
+console.log(concatenates([4, 5, 6, 2], [3, 8, 11, 9]));
+
+// 9. Write a program that deletes a given element e from the array a.
+// Input: e = 2, a = [4, 6, 2, 8, 2, 2]
+// Output array: [4, 6, 8]
 
