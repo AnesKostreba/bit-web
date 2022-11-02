@@ -10,14 +10,34 @@ function switchElement(niz) {
         if (niz[i] < min) {
             min = niz[i];
         } else if (niz[i] > max) {
-            max = niz[i]
+            max = niz[i];
         }
     }
     var indexMin = niz.indexOf(min);
     var indexMax = niz.indexOf(max);
-    niz[indexMax] = min;
     niz[indexMin] = max;
+    niz[indexMax] = min;
     return niz;
 }
 var niz = [3, 500, 12, 149, 53, 414, 1, 19];
 console.log(switchElement(niz));
+
+
+// 2. Use the following array to make a new one by dividing its values by two and adding 5. If
+// a given element&#39;s value is 0, change it to 20.
+// Input: [ 3, 500, -10, 149, 53, 414, 1, 19 ]
+// Output: [ 6.5, 255, 20, 79.5, 31.5, 212, 5.5, 14.5 ]
+
+function dividingMembers(niz) {
+    for (var i = 0; i < niz.length; i++) {
+        if (niz[i] != 0) {
+            niz[i] = niz[i] / 2 + 5;
+        }else{
+            niz[i] = 20;
+        }
+    }
+    return niz;
+}
+var niz = [3, 500, -10, 149, 53, 414, 1, 19];
+console.log(dividingMembers(niz));
+
