@@ -86,14 +86,14 @@ function symmetric(niz) {
     var j = niz.length - 1;
 
     for (var i = 0; i < niz.length; i++) {
-        if(niz[i] == niz[(niz.length - 1) - i]){
+        if (niz[i] == niz[(niz.length - 1) - i]) {
             isSymmetric = true;
         } else {
             isSymmetric = false;
             break;
         }
     }
-    
+
     if (isSymmetric) {
         return "Symetric";
     } else {
@@ -109,9 +109,9 @@ console.log(symmetric([2, 4, -2, 7, -2, 4]));
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 3, 5, 8, 6, 11, 2, 9]
 
-function intertwines(niz1,niz2){
+function intertwines(niz1, niz2) {
     var res = [];
-    for(var i=0;i<niz1.length;i++){
+    for (var i = 0; i < niz1.length; i++) {
         res.push(niz1[i]);
         res.push(niz2[i]);
     }
@@ -123,10 +123,10 @@ console.log(intertwines([4, 5, 6, 2], [3, 8, 11, 9]));
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 5, 6, 2, 3, 8, 11, 9]
 
-function concatenates(niz1,niz2){
+function concatenates(niz1, niz2) {
     var niz3 = [];
-    for(var i=0; i<niz1.length;i++){
-        niz3 = niz1.concat(niz2); 
+    for (var i = 0; i < niz1.length; i++) {
+        niz3 = niz1.concat(niz2);
     }
     return niz3;
 }
@@ -136,3 +136,41 @@ console.log(concatenates([4, 5, 6, 2], [3, 8, 11, 9]));
 // Input: e = 2, a = [4, 6, 2, 8, 2, 2]
 // Output array: [4, 6, 8]
 
+function deletes(niz, n) {
+    var res = [];
+    for (var i = 0; i < niz.length; i++) {
+        if (niz[i] != n) {
+            res.push(niz[i]);
+        }
+    }
+    return res;
+}
+console.log(deletes([4, 6, 2, 8, 2, 2], 2));
+
+
+// 10. Write a program that inserts a given element e on the given position p in the array a. If
+// the value of the position is greater than the array length, print the error message.
+// Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
+// Output: [2, -2, 33, 78, 12, 5, 8]
+
+function elementInsert(element, position, niz) {
+    if (position <= niz.length && position >= 0) {
+        for(i = niz.length; i > position; i--) {
+            niz[i] = niz[i-1];
+        }
+        niz[position] = element;
+    } 
+    else {
+        return "Error";
+    }
+    
+    return niz;
+    }
+    
+    var element = 78;
+    var position = 3;
+    var niz = [2, -2, 33, 12, 5, 8];
+    
+    console.log(elementInsert(element, position, niz));
+
+    
