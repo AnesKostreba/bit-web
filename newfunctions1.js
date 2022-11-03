@@ -41,3 +41,38 @@ function dividingMembers(niz) {
 var niz = [3, 500, -10, 149, 53, 414, 1, 19];
 console.log(dividingMembers(niz));
 
+// Initialize two arrays. The first one should contain student names, the second one the
+// number of points for each student. Display students&#39; names with their corresponding
+// grade. Use the following ranges:
+
+
+
+function student(students,points){
+    for(var i=0; i < students.length; i++){
+        if(points[i] <=61 && points[i] >50){
+            console.log(students[i] + "je osvojio "+points[i]+" i dobio je 6");
+        }
+        else if(points[i] <=70 && points[i] > 60){
+            console.log(students[i] +" je osvojio "+points[i]+" i dobio je 7");
+        }
+        else if(points[i] <=80 && points[i] > 70){
+            console.log(students[i] +" je osvojio "+points[i]+ " i dobio je 8");
+        }
+        else if(points[i] <= 90 && points[i] > 80){
+            console.log(students[i] +" je osvojio "+points[i]+ " i dobio je 9");
+        }
+        else if(points[i] <= 100 && points[i] > 90){
+            console.log(students[i] + " je osvojio " +points[i]+ " i dobio je 10");
+        }
+        else{
+            console.log(students[i]+" je osvojio "+points[i]+ " i nije polozio ispit");
+        }
+    }
+    return "";
+}
+
+var students =["Michael","Anne","Frank","Joe","John","David","Mark","Bill"];
+var points = [ 50,39,63,72,99,51,83,59 ];
+console.log(student(students,points));
+
+
