@@ -32,7 +32,7 @@ function dividingMembers(niz) {
     for (var i = 0; i < niz.length; i++) {
         if (niz[i] != 0) {
             niz[i] = niz[i] / 2 + 5;
-        }else{
+        } else {
             niz[i] = 20;
         }
     }
@@ -47,32 +47,74 @@ console.log(dividingMembers(niz));
 
 
 
-function student(students,points){
-    for(var i=0; i < students.length; i++){
-        if(points[i] <=61 && points[i] >50){
-            console.log(students[i] + "je osvojio "+points[i]+" i dobio je 6");
+function student(students, points) {
+    for (var i = 0; i < students.length; i++) {
+        if (points[i] <= 61 && points[i] > 50) {
+            console.log(students[i] + "je osvojio " + points[i] + " i dobio je 6");
         }
-        else if(points[i] <=70 && points[i] > 60){
-            console.log(students[i] +" je osvojio "+points[i]+" i dobio je 7");
+        else if (points[i] <= 70 && points[i] > 60) {
+            console.log(students[i] + " je osvojio " + points[i] + " i dobio je 7");
         }
-        else if(points[i] <=80 && points[i] > 70){
-            console.log(students[i] +" je osvojio "+points[i]+ " i dobio je 8");
+        else if (points[i] <= 80 && points[i] > 70) {
+            console.log(students[i] + " je osvojio " + points[i] + " i dobio je 8");
         }
-        else if(points[i] <= 90 && points[i] > 80){
-            console.log(students[i] +" je osvojio "+points[i]+ " i dobio je 9");
+        else if (points[i] <= 90 && points[i] > 80) {
+            console.log(students[i] + " je osvojio " + points[i] + " i dobio je 9");
         }
-        else if(points[i] <= 100 && points[i] > 90){
-            console.log(students[i] + " je osvojio " +points[i]+ " i dobio je 10");
+        else if (points[i] <= 100 && points[i] > 90) {
+            console.log(students[i] + " je osvojio " + points[i] + " i dobio je 10");
         }
-        else{
-            console.log(students[i]+" je osvojio "+points[i]+ " i nije polozio ispit");
+        else {
+            console.log(students[i] + " je osvojio " + points[i] + " i nije polozio ispit");
         }
     }
     return "";
 }
 
-var students =["Michael","Anne","Frank","Joe","John","David","Mark","Bill"];
-var points = [ 50,39,63,72,99,51,83,59 ];
-console.log(student(students,points));
+var students = ["Michael", "Anne", "Frank", "Joe", "John", "David", "Mark", "Bill"];
+var points = [50, 39, 63, 72, 99, 51, 83, 59];
+console.log(student(students, points));
 
 
+// Write a program that uses a loop to add all the even numbers from 1 to 1000 and
+// subtracts all the odd numbers 1 to 500 from the calculated sum. The result should then
+// be multiplied by 12.5 and displayed in console.
+
+
+function numbers(num) {
+    var result = 0;
+    for (var i = 0; i < num; i++) {
+        if (i % 2 == 0) {
+            result += i;
+        } else if (i % 2 !== 0 && i < 500) {
+            result -= i;
+        }
+        
+    }
+    result = result * 12.5;
+    return result;
+}
+console.log(numbers(1000));
+
+
+// 7. Define a 10 element array. Take the first two letters from every string (that has at least 2
+    // letters) in the array and create a new string from them. Print it out in the console.
+
+
+
+
+
+
+//8.  Write a program that takes a string and prints its characters out in reversed order in the
+// console.
+
+
+    function reverse(str) {
+        let newString = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+            newString += str[i];
+        }
+        return newString;
+    }
+    const string = reverse('Belgrade Institute of Technology');
+    console.log(string);
