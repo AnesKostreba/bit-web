@@ -89,7 +89,7 @@ function numbers(num) {
         } else if (i % 2 !== 0 && i < 500) {
             result -= i;
         }
-        
+
     }
     result = result * 12.5;
     return result;
@@ -98,7 +98,7 @@ console.log(numbers(1000));
 
 
 // 7. Define a 10 element array. Take the first two letters from every string (that has at least 2
-    // letters) in the array and create a new string from them. Print it out in the console.
+// letters) in the array and create a new string from them. Print it out in the console.
 
 
 
@@ -109,12 +109,30 @@ console.log(numbers(1000));
 // console.
 
 
-    function reverse(str) {
-        var newString = "";
-        for (var i = str.length - 1; i >= 0; i--) {
-            newString += str[i];
-        }
-        return newString;
+function reverse(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
     }
-    const string = reverse('Belgrade Institute of Technology');
-    console.log(string);
+    return newString;
+}
+const string = reverse('Belgrade Institute of Technology');
+console.log(string);
+
+
+// 9. Write a program that displays all the combinations of two numbers between 1 and 7.
+// Don't display two of the same numbers at the same time. Display the number of possible
+// combinations, as well. (E.g. (1.2),(2,1) is allowed, but not (1,1), (2,2)...).
+
+function combinations() {
+
+    for (var i = 0; i <= 7; i++) {
+        for (var j = 0; j <= 7; j++) {
+            if (i >= 1 && j >= 1 && i != j) {
+                console.log(i,j);
+            }
+        }
+    }
+    return "";
+}
+console.log(combinations());
