@@ -1,0 +1,10 @@
+body{
+    background-image: url(../005-Zaovinsko-jezero.jpg);
+    
+    background-position: right;
+    background-attachment: fixed;
+    background-size: cover;
+}
+p, h1,h2,h3,h4{
+    color: white;
+}

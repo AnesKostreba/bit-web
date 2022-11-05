@@ -1,0 +1,17 @@
+img{
+    display: block;
+}
+.prva{
+    height: 200px;
+    float: right;
+}
+.druga{
+    width: 200px;
+    margin: 0 auto;
+}
+.treca{
+    width: 200px;
+    height: 200px;
+    float: left;
+
+}

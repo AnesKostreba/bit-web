@@ -204,3 +204,5 @@ function gcdNumbers(x, y) {
   console.log(gcdNumbers(12, 13));
   console.log(gcdNumbers(9, 3));
 
+
+  
