@@ -101,7 +101,20 @@ console.log(numbers(1000));
 // letters) in the array and create a new string from them. Print it out in the console.
 
 
+function takeLetters(arr) {
+    var newStr = "";
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i].length > 1) {
+            for (var j = 0; j < 2; j++) {
+                newStr += arr[i][j];
+            }
+        }
+    }
+    return newStr;
+}
 
+arr = ["Mi", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A"];
+console.log(takeLetters(arr));
 
 
 
@@ -129,10 +142,65 @@ function combinations() {
     for (var i = 0; i <= 7; i++) {
         for (var j = 0; j <= 7; j++) {
             if (i >= 1 && j >= 1 && i != j) {
-                console.log(i,j);
+                console.log(i, j);
             }
         }
     }
     return "";
 }
 console.log(combinations());
+
+// 10. Write a program that checks if the entered number is a prime number (i.e. divisible only
+// by 1 and by itself).
+
+function primeNumber(num) {
+    var div = 0;
+    for (var i = 1; i <= num; i++) {
+        if (num % i == 0){
+            div ++;
+        }
+    }
+    if(div < 3){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+console.log(primeNumber(7));
+
+
+//11. Check if a given string is a palindrome (spaces are ignored).
+
+function reverse(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    if(str == newString){
+        return true;
+    }
+    return false;
+}
+str = reverse('madam');
+console.log(str);
+
+// 12. Write a program that calculates the greatest common divisor of two integers. Note: The
+// greatest common divisor of two non-zero integers is the greatest positive number that
+// divides both numbers with no remainder.
+
+function gcdNumbers(x, y) {
+    x = Math.abs(x);
+    y = Math.abs(y);
+    while(y) {
+      var t = y;
+      y = x % y;
+      x = t;
+    }
+    return x;
+  }
+  
+  console.log(gcdNumbers(12, 13));
+  console.log(gcdNumbers(9, 3));
+

@@ -241,3 +241,16 @@ console.log(characterPosition);
 
 //  Write a function to convert string into an array. Space in a string should be represented as
 // “null” in new array.
+
+
+// var a = "hello ";
+// var result = Array.from(a);
+// console.log(result);
+
+function split(niz){
+    Array.from(niz);
+    return niz;
+}
+console.log(split("Random"));
+
+
