@@ -205,7 +205,7 @@ function concatenates(input, n) {
     }
     return result;
 }
-console.log(concatenates("eee", 3));
+console.log(concatenates("ha", 3));
 
 //Write a function to count the number of letter occurrences in a string.
 
@@ -236,21 +236,147 @@ function position(inputString, character) {
     return -1;
 }
 
-var characterPosition = position('This is my string', 'm');
+var characterPosition = position('This is my string', 'i');
 console.log(characterPosition);
 
-//  Write a function to convert string into an array. Space in a string should be represented as
+// 7.  Write a function to convert string into an array. Space in a string should be represented as
 // “null” in new array.
 
-
-// var a = "hello ";
-// var result = Array.from(a);
-// console.log(result);
-
-function split(niz){
-    Array.from(niz);
-    return niz;
+function convertString(string){
+    var result = [];    
+    for(var i = 0; i < string.length; i++){
+        for(var j = 0; j<string.length;j++){
+            result.push(string[j]);
+        }
+        break;
+    }
+    
+    return result;
 }
-console.log(split("Random"));
+
+string = "My random string";
+console.log(convertString(string));
 
 
+// 8. Write a function that accepts a number as a parameter and checks if the number is prime or
+// not.
+
+
+function prostBroj(num) {
+    if (num === 1) {
+        return false;
+    } else if (num === 2) {
+        return true;
+    }
+    for (var x = 2; x < num; x++) {
+        if (num % x === 0) {
+            return false;
+        }
+    }
+    return true;
+ }
+ var result = prostBroj(4);
+ console.log(result);
+
+
+//  9. Write a function that replaces spaces in a string with provided separator. If separator is not
+// provided, use “-” (dash) as the default separator.
+
+// function spaceInString(str,sep){
+    // 
+    // for(var i = 0; i < str.length;i++){
+        // if(str[i] === " "){
+            // str[i] = sep;
+        // }
+    // }
+    // return str;
+// }
+// 
+// var res = spaceInString("My string", "_");
+// console.log(res);
+
+// ???
+
+
+//10. Write a function to get the first n characters and add “...” at the end of newly created string.
+
+
+function addAfterFirstCh(str,sep){
+    var result = "";
+    for(var i = 0; i < str.length; i++){
+        var e = str[i];
+        result += e;
+        if(i === sep){
+            result+= "...";
+            break;
+        }
+    }
+    return result;
+}
+console.log(addAfterFirstCh("My random string",8));
+
+
+// 11. Write a function that converts an array of strings into an array of numbers. Filter out all
+// non-numeric values.
+
+function converts(niz) {
+    var result = [];
+    for (var i = 0; i < niz.length; i++) {
+        var res = Number(niz[i]);
+        if(res && niz[i] !== Infinity){
+            result.push(res);
+        }
+    }
+    return result;
+}
+
+niz = ["1", "21", undefined, "42", "1e+3", Infinity]
+console.log(converts(niz));
+
+
+// 12. Write a function to calculate how many years there are left until retirement based on the
+// year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is
+// already retired, a proper message should be displayed.
+
+
+function penzija(rodjenje,pol){
+    var starost = 2022 - rodjenje;
+    if(pol === "m"){
+        if(starost <= 65){
+            var penzija = 65 - starost;
+            return penzija;
+        }else{
+            return "Osoba je vec u penziji";
+        }
+    }
+    if(pol === "z"){
+        if(starost <=60){
+            var penzija = 60 - starost;
+            return penzija;
+        }else{
+            return "Osoba je vec u penziji";
+        }
+    }
+}
+
+console.log(penzija(1994,"m"));
+
+
+// 13. Write a function to humanize a number (formats a number to a human-readable string) with
+// the correct suffix such as 1st, 2nd, 3rd or 4th.
+
+function sNumber(num) {
+    if (num % 100 >= 11 && num % 100 <= 13) {
+        return a + 'th';
+    }
+    switch (num % 10) {
+        case 1:
+            return num + 'st';
+        case 2:
+            return num + 'nd';
+        case 3:
+            return num + 'rd';
+    }
+    return num + 'th';
+}
+console.log(sNumber(2));
