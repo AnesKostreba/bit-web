@@ -4,15 +4,15 @@
 
 function citatReader(input) {
     var citat = "";
-    number = Math.floor(Math.random() * input.length - 1)
+    number = Math.floor(Math.random() * input.length)
     citat = input[number];
     return citat;
 }
 var array = ['Ne postoje neuspjesi vec samo zivotne lekcije . N.A.',
-             'U decijoj igri cesto je dubok smisao. F.S',
-            "Ako si umoran nauci odmoriti, a ne odustati. BANKSY",
-             "Sloboda je stanje u kojem covek sve cini bez prinude, ali da ne naskodi drugome. M.S.",
-             "Ako vidis prijatelja bez osmeha pokloni mu svoj", 
-            "Putovanje se meri bolje stecenim prijateljima nego miljama"];
+    'U decijoj igri cesto je dubok smisao. F.S',
+    "Ako si umoran nauci odmoriti, a ne odustati. BANKSY",
+    "Sloboda je stanje u kojem covek sve cini bez prinude, ali da ne naskodi drugome. M.S.",
+    "Ako vidis prijatelja bez osmeha pokloni mu svoj",
+    "Putovanje se meri bolje stecenim prijateljima nego miljama"];
 input = citatReader(array);
 console.log(input);
