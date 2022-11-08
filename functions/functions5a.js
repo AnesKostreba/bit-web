@@ -2,7 +2,7 @@
 // ispisuje na stranici po jedan citat, ali tako da se citat promeni kada se program
 // pokrene.
 
-function citatReader(input) {
+function citat(input) {
     var citat = "";
     number = Math.floor(Math.random() * input.length)
     citat = input[number];
@@ -14,5 +14,9 @@ var array = ['Ne postoje neuspjesi vec samo zivotne lekcije . N.A.',
     "Sloboda je stanje u kojem covek sve cini bez prinude, ali da ne naskodi drugome. M.S.",
     "Ako vidis prijatelja bez osmeha pokloni mu svoj",
     "Putovanje se meri bolje stecenim prijateljima nego miljama"];
-input = citatReader(array);
+input = citat(array);
 console.log(input);
+
+
+// 3. Napisati funkciju koja za zadatu reč (ili rečenicu) proverava koliko ima
+// samoglasnika i koliko suglasnika.
