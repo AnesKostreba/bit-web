@@ -41,8 +41,9 @@ header img{
     padding-inline-start: 0;
     
 }
-.main ul :hover {
+.main ul :active {
     background-color: blue;
+    
 }
 .asside{
     margin: 0 auto;
