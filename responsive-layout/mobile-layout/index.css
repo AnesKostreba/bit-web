@@ -57,3 +57,34 @@ header img{
 .asside p {
     text-align: center;
 }
+
+.asside1{
+    margin: 0 auto;
+    border: 0.1px solid black;
+    margin-top: 2%;
+}
+.asside1 img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.asside1 p {
+    text-align: center;
+}
+
+
+.asside2{
+    margin: 0 auto;
+    border: 0.1px solid black;
+    margin-top: 2%;
+}
+.asside2 img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.asside2 p {
+    text-align: center;
+}
