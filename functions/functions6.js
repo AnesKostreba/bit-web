@@ -1,6 +1,6 @@
 // 1. Write a function to count vowels in a provided string. Vowels are a, e, i, o, and u as well as A,
 // E, I, O, and U.
-
+"use strict";
 
 function brojanje(niz) {
     var samoglasnik = 0;
