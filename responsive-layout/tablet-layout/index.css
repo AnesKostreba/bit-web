@@ -1,4 +1,4 @@
-@media (min-width:450px) and (max-width:650px) {
+@media (min-width:450px) and (max-width:750px) {
     header h1 {
         display: block;
         float: left;
@@ -12,6 +12,7 @@
     .img {
         clear: both;
         float: left;
+        margin-top: 5%;
     }
     nav{
         width: 40%;
@@ -29,5 +30,63 @@
         background-color: rgb(118, 118, 255);
         color: #fff;
         border-radius: 10%;
+    }
+    .img img{
+        width: 90%;
+        height: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        
+    }
+    .prvi{
+        clear: both;
+        border: 0.5px solid black;
+        height: 9rem;
+        margin-top: 5%;
+    }
+    .prvi img{
+        float: left;
+        width: 8rem;
+        margin-left: 5%;
+        margin-right: 5%;
+       margin-top: 1%;
+    }
+    .prvi p{
+        text-align: center;
+    }
+
+    .drugi{
+        clear: both;
+        border: 0.5px solid black;
+        height: 9rem;
+        margin-top: 5%;
+    }
+    .drugi img{
+        float: left;
+        width: 8rem;
+        margin-left: 5%;
+        margin-right: 5%;
+       margin-top: 1%;
+    }
+    .drugi p{
+        text-align: center;
+    }
+
+    .treci{
+        clear: both;
+        border: 0.5px solid black;
+        height: 9rem;
+        margin-top: 5%;
+    }
+    .treci img{
+        float: left;
+        width: 8rem;
+        margin-left: 5%;
+        margin-right: 5%;
+       margin-top: 1%;
+    }
+    .treci p{
+        text-align: center;
     }
 }
