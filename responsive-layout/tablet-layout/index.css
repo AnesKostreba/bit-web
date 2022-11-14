@@ -1,0 +1,33 @@
+@media (min-width:450px) and (max-width:650px) {
+    header h1 {
+        display: block;
+        float: left;
+    }
+
+    header nav {
+        float: right;
+        margin-top: 6%;
+    }
+
+    .img {
+        clear: both;
+        float: left;
+    }
+    nav{
+        width: 40%;
+        margin-right: 3%;
+    }  
+    header nav a {
+        margin-left: 2%;
+        text-decoration: none;
+        padding: 2%;
+        color: rgb(118, 118, 255);
+        float: right;
+    }
+
+    header nav a:active {
+        background-color: rgb(118, 118, 255);
+        color: #fff;
+        border-radius: 10%;
+    }
+}
