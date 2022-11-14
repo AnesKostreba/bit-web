@@ -1,0 +1,83 @@
+header h1{
+    display: block;
+    float: left;
+    margin-left: 3%;
+}
+header nav{
+    float: right;
+    margin-top: 3%;
+    width: 40%;
+    margin-right: 5%;
+}
+header nav a{
+    padding: 3%;
+    float: right;
+    text-decoration: none;
+    color: rgb(96, 96, 255);
+    margin-bottom: 5%;
+}
+header nav a:hover{
+    background-color: rgb(96, 96, 255);
+    color: #fff;
+    border-radius: 5%;
+}
+.img img{
+    width: 70%;
+    height: 10%;
+    display: block;
+    margin: 0 auto;
+}
+.prvi{
+    width: 33%;
+    float: left;
+    
+    margin-top: 5%;
+}
+.prvi p{
+    text-align: center;
+    padding: 3%;
+}
+.prvi img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 50%;
+}
+
+
+
+
+.drugi{
+    width: 33%;
+    float: left;
+    
+    margin-top: 5%;
+}
+.drugi p{
+    text-align: center;
+    padding: 3%;
+}
+.drugi img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 50%;
+}
+
+
+.treci{
+    width: 33%;
+    float: left;
+    
+    margin-top: 5%;
+}
+.treci p{
+    text-align: center;
+    padding: 3%;
+}
+.treci img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 50%;
+}
