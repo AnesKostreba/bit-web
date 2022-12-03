@@ -1,0 +1,52 @@
+header h1 {
+  text-align: center;
+  font-family: "Alice", serif;
+}
+header nav {
+  font-family: "Ropa Sans", sans-serif;
+  display: flex;
+  margin: 1% 0 1% 0;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+header a {
+  color: chocolate;
+  text-decoration: none;
+}
+header a:hover {
+  color: blue;
+}
+
+main {
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-evenly;
+}
+main .third {
+  padding: 3%;
+}
+main .third div {
+  text-align: center;
+}
+main .third h1 {
+  text-align: center;
+}
+main img {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+main .image {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+main .first .secound .third {
+  text-align: center;
+  width: 30%;
+  height: 500px;
+  padding: 1%;
+  text-align: center;
+  font-family: "Ropa Sans", sans-serif;
+}/*# sourceMappingURL=index.css.map */

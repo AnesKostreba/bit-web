@@ -1,0 +1,20 @@
+@mixin divDecor() {
+    text-align: center;
+    width: 30%;
+    height: 500px;
+    padding: 1%;
+    text-align: center;
+    
+}
+
+@mixin mainDecor() {
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+@mixin images() {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
