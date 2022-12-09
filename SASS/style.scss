@@ -1,0 +1,14 @@
+$bColor:red;
+$color: black;
+$border: 0.3px solid red;
+.prvi{
+    width: 100px;
+    
+    background-color: $bColor;
+}
+.prvi p{
+    color: $color;
+}
+.drugi{
+    border: $border;
+}

@@ -50,3 +50,4 @@ console.log(falsyValues(niz));
 
 
 //4. Write a program that calculates a number of integer values in the array.
+

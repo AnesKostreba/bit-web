@@ -1,0 +1,30 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.prvi{
+    background-color: yellowgreen;
+    width: 200px;
+}
+.drugi{
+    background-color: orange;
+    width: 200px;
+}
+.treci{
+    background-color: black;
+    width: 200px;
+    flex-direction: column;
+}
+.cetvrti{
+    background-color: tomato;
+    width: 200px;
+}
+.peti{
+    background-color: rgb(255, 216, 216);
+    width: 200px;
+}
+.sesti{
+    background-color: rgb(199, 177, 173);
+    width: 200px;
+}

@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+}
+@media (max-width:300px) {
+    header {
+        margin: 0 auto;
+    }
+    header img{
+        justify-content: center;
+    }
+}
