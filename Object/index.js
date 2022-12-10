@@ -73,7 +73,7 @@ function mapLetters(str='') {
     }
 
     var result = {};
-
+    
     for (var i = 0; i < str.length; i++) {
         var newArray = [];
         newArray[0] = i;
@@ -82,11 +82,16 @@ function mapLetters(str='') {
                 newArray.unshift(j);
             }
         }
-
         result[str[i]] = newArray
     }
-
     return result;
 }
+console.log(mapLetters("froggy"));
 
-console.log(mapLetters("grapes"));
+
+// 4. And who cursed the most in the fight between you and your spouse? Given an object
+// with three rounds, with nested objects as your scores per round, return a string of who
+// cursed the most: If you, return &quot;ME!&quot; If your spouse, return &quot;SPOUSE!&quot; If a draw, return
+// &quot;DRAW!&quot;
+
+
