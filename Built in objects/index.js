@@ -80,3 +80,20 @@ console.log(findLessElement([2,3,8,4,11,-2],5));
 // Input: [’JavaScript’, ’Programming’, ’fun’, ’product’]
 // Output: [’Programming’, ‘product’]
 
+
+
+
+
+// 6.
+// a. Write a list (array) of products you usually buy in the supermarket. Write a price
+// and name for each product. For example,
+// [
+
+// {name: ‘apples’, price: 100},
+// {name: ‘milk’, price: 80},
+// {name:’bananas’, price: 150}
+// ]
+
+
+
+
