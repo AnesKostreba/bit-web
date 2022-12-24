@@ -55,3 +55,28 @@ function minValue(array){
 var array = [1,4,-2,11,8,1,-2,3];
 console.log(minValue(array));
 
+
+// 5.
+// a. Write a function that finds all the elements in a given array less than a given
+// element.
+// Input: [2, 3, 8, -2, 11, 4], 6
+// Output: [2, 3, -2, 4]
+
+function findLessElement(array,element){
+    var newArray = [];
+    for(var i = 0;i<array.length;i++){
+        if(array[i] < element){
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
+
+console.log(findLessElement([2,3,8,4,11,-2],5));
+
+
+// b. Write a function that finds all the elements in a given array that start with the “pro”
+// substring. The function should be case insensitive.
+// Input: [’JavaScript’, ’Programming’, ’fun’, ’product’]
+// Output: [’Programming’, ‘product’]
+
