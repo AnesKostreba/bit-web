@@ -51,4 +51,8 @@ function openURL(){
 // }
 // setInterval(interval,3000);
 
+function reloadPage(){
+    location.reload();
+}
+
 testStorage();
