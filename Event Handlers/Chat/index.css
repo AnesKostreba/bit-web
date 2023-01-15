@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    height: 300px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+.input{
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+}
+.text{
+    width: 40%;
+}
+.sendMessage{
+    background-color: red;
+    width: 150px;
+}
+.chat p{
+    background-color: aqua;
+    padding: 5px;
+    margin: 0.3%;
+    width: fit-content;
+}
