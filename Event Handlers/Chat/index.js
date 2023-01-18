@@ -1,13 +1,12 @@
 var button = document.querySelector(".sendMessage");
 var input = document.querySelector(".text");
 var mainArea = document.querySelector(".chat");
-var forDeleting = document.querySelector('p');
+
 
 
 function sendMessage() {
     if (input.value) {
         var msg = document.createElement("p");
-        msg.setAttribute("id","paragraph");
         msg.textContent = input.value;
         mainArea.appendChild(msg);
         input.value = "";

@@ -1,0 +1,16 @@
+#chat{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+img{
+    width: 50%;
+    border-radius: 100px;
+}
+.button{
+    border: none;
+    border-radius: 50%;
+}
+.container{
+    display: none;
+}

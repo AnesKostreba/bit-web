@@ -1,0 +1,11 @@
+.active{
+    background-color: aqua;
+}
+.none{
+    background-color: red;
+    font-size: large;
+}
+.boja{
+    background-color: yellow;
+    font-weight: 500;
+}

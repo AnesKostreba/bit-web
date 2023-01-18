@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <ul id="list">
-        <li>Home</li>
-        <li>About</li>
-    </ul>
-    <button onclick="showElement()">Show</button>
-    <button onclick="hideElement()">Hide</button>
-    <ul id="text">
-        <li>Contact</li>
-        <li>Our product</li>
-        
-    </ul>
+    
+    <button onclick="showElement()"><img src="t1.jpg" alt=""></button>
+    <button onclick="hideElement()">X</button>
+    
+    <div id="wrapper">
+        <div id="chat">
+
+
+        </div>
+
+        <form>
+            <input type="text">
+            <button type="button" onclick="sendMessage()">Send</button>
+        </form>
+
+    </div>
     
     <script type="text/javascript" src="index.js"></script>
 </body>
