@@ -12,25 +12,28 @@
     
 // console.log(all);
 
-var element1 = document.createElement("li");
-var textElement = document.createTextNode("Add element");
-element1.appendChild(textElement);
-document.getElementById("list").appendChild(element1);
-
-var prebaci = document.getElementById("text").firstElementChild;
-document.getElementById("list").appendChild(prebaci);
 
 
+var node = document.createElement('li');
+var textNode = document.createTextNode("Novi Li");
+node.appendChild(textNode);
+document.getElementById("list").appendChild(node);
 
-var addNew = document.createElement("li");
-var textNodeNew = document.createTextNode("Novi Element u drugom UL");
-addNew.appendChild(textNodeNew);
-document.getElementById("text").appendChild(addNew);
+var node2 = document.getElementById("list").lastElementChild;
+document.getElementById("text").appendChild(node2);
 
-var noviGore = document.getElementById("text").lastElementChild;
-document.getElementById("list").appendChild(noviGore);
 
-var rem = document.getElementById("list");
-if(rem.hasChildNodes()){
-    rem.removeChild(rem.firstChild);
+
+var node3 = document.getElementById("text");
+
+node3.style.backgroundColor = "red";
+
+function hideElement(){
+    var el = document.getElementById("list");
+    el.style.display = "none";
+}
+
+function showElement(){
+    var se = document.getElementById("list");
+    se.style.display = "block";
 }
