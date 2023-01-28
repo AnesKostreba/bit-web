@@ -26,23 +26,17 @@ class Car{
         }
     }
 
+
     accelrate(speed){
-        if(speed > 0){
-            var newSpeed = this.motion + speed;
-            return newSpeed;
-        }
+            this.motion += speed;
     }
 
-    break(down){
-        var newSpeed = 0;
-        if(down > 0){
-            newSpeed = this.motion - down;
-        }
-        if(newSpeed < 0){
-            newSpeed = 0;
-        }
-        return newSpeed;
 
+    break(down){
+        this.motion -= down;
+        if(this.motion < 0){
+            this.motion = 0;
+        }
     }
 
     breakRightNow(){
@@ -53,9 +47,27 @@ class Car{
     }
 }
 
-var novi = new Car('Mercedes','C220',105);
-console.log(novi.checkMotion());
-console.log(novi.accelrate(15));
-console.log(novi.break(5));
-console.log(novi.status());
-console.log(novi.breakRightNow());
+var car1 = new Car('Mercedes','C220',105);
+var car2 = new Car('Skoda','Fabia',110);
+var car3 = new Car('Passat','B6',143);
+var car4 = new Car('Skoda','Octavia',113);
+
+// console.log(car1.status());
+
+// car1.breakRightNow();
+// console.log(car1.checkMotion());
+
+
+console.log(car2.status());
+car2.accelrate(15);
+console.log(car2.status());
+car2.break(135);
+console.log(car2.status());
+
+
+// console.log(car2.accelrate(15));
+// console.log(car2.status());
+
+
+// console.log(car3.status());
+// console.log(car4.status());
