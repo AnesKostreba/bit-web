@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Exam statistic June</h1>
+        <h2 >Total Students:<span id="counter"></span></h2>
+        <div class="passed">
+            <p>PASSED<span class="passed-student"></span></p>
+        </div>
+        <div class="failed">
+            <p>FAILED<span class="failed-student"></span></p>
+        </div>
+    </header>
+
+    <main>
+        <select name="" id="sel" class="select">
+            <option value="-">-</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+        </select>
+        <input type="text" class="name" name="" id="" placeholder="Name surname">
+        <input type="number" min="5" max="10" class="grade" name="" id="grade" placeholder="Grade">
+        <button id="update" onclick="setValue()">ADD</button>
+    </main>
+    <footer>
+        
+        <div class="passedD">
+            <h4>PASSED</h4>
+            <ul id="passed">
+                
+            </ul>
+        </div>
+        
+        <div class="failedD">
+            <h4>FAILED</h4>
+            <ul id="failed">
+                
+            </ul>
+        </div>
+    </footer>
+    <script src="js/exam.js"></script>
+    <script src="js/subject.js"></script>
+    <script src="js/student.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

@@ -1,5 +1,3 @@
-
-
 function move(event){
     var playerX = event.layerX;
     var playerY = event.layerY;
@@ -8,4 +6,3 @@ function move(event){
     imgg.style.left = playerX+'px';
     imgg.style.top = playerY+'px';
 }
-

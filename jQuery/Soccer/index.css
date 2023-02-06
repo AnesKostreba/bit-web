@@ -1,0 +1,13 @@
+.wrapper{
+    background-image: url(Image/IMG_6769.jpg);   
+    width:2000px;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-color: rgb(80, 150, 255);
+    background-size: cover;
+    margin: 0 auto;
+    position:relative;
+}.player{
+    width: 70px;
+    position:absolute;
+}
